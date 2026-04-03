@@ -84,7 +84,7 @@ export default function Dashboard({ books }: Props) {
                   axisLine={false}
                 />
                 <Tooltip
-                  formatter={(v: number) => [`${v}冊`, "読了数"]}
+                  formatter={(v) => [`${v}冊`, "読了数"]}
                   contentStyle={{ fontSize: 12, borderRadius: 8 }}
                 />
                 <Bar dataKey="count" fill="#6366f1" radius={[4, 4, 0, 0]} />
@@ -115,7 +115,7 @@ export default function Dashboard({ books }: Props) {
                   ))}
                 </Pie>
                 <Tooltip
-                  formatter={(v: number) => [`${v}冊`, ""]}
+                  formatter={(v) => [`${v}冊`, ""]}
                   contentStyle={{ fontSize: 12, borderRadius: 8 }}
                 />
                 <Legend
